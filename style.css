@@ -9,24 +9,25 @@ body {
 }
 
 body {
-    padding-top: 11px;
-    padding-bottom: 11px;
+    margin: 10px auto;
+    width: 1241px;
+    min-width: 1241px;
+    border: 1px solid #ac8181;
     background: #fff;
     color: #111;
     font-family: "Times New Roman", Times, serif;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 body > * {
-    width: 990px;
-    max-width: calc(100% - 20px);
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 .main-header {
-    height: 50px;
-    border: 2px solid #b68d8f;
+    height: 65px;
+    border: 1px solid #ac8181;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,20 +36,18 @@ body > * {
 .main-header h1 {
     margin: 0;
     color: #98444b;
-    font-size: 29px;
+    font-size: 32px;
     font-style: italic;
-    text-shadow: 4px 9px 0 #f2c8c9;
+    text-shadow: 5px 6px 1px #efd2d2;
 }
 
 .top-navbar {
-    height: 30px;
-    padding: 0 10px;
-    border-right: 1px solid #c77c80;
-    border-left: 1px solid #c77c80;
+    height: 37px;
+    border-top: 1px solid #ae7777;
     background: #ed9296;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav-links,
@@ -59,16 +58,18 @@ body > * {
 }
 
 .nav-links {
+    flex: 0 0 445px;
+    margin-left: 289px;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav-links li {
-    flex: 0 0 122px;
-    height: 26px;
-    border-right: 1px solid #704b75;
+    flex: 0 0 133px;
+    height: auto;
+    border-right: 1px solid #884bab;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,23 +77,16 @@ body > * {
 }
 
 .nav-links li:first-child {
-    flex-basis: 32px;
-}
-
-.nav-links li:nth-child(2) {
-    flex-basis: 122px;
+    flex: 0 0 42px;
+    padding: 0 10px;
 }
 
 .nav-links li:nth-child(3) {
-    flex-basis: 156px;
-}
-
-.nav-links li:nth-child(4) {
-    flex-basis: 127px;
+    flex-basis: 132px;
 }
 
 .nav-links li:last-child {
-    border-right: 0;
+    border-right: 1px solid #704b75;
 }
 
 .nav-links a {
@@ -100,27 +94,30 @@ body > * {
     width: 100%;
     color: #fff;
     font-weight: bold;
-    font-size: 13px;
     text-align: center;
     text-decoration: none;
-    padding-top: 5px; /* Thêm dòng này (có thể tăng/giảm số 3px để chữ tụt xuống đúng ý bạn) */
+    padding: 6px 0;
 }
 
 .home-icon img {
-    width: 16px;
-    height: 16px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: translateY(-3px);
 }
 
 .search-box {
+    flex: 0 0 180px;
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin-left: 0;
+    gap: 3px;
+    margin-left: 47px;
+    transform: translateY(3px);
 }
 
 .search-box input {
-    width: 150px;
-    height: 17px;
+    width: 138px;
+    height: 18px;
     border: 1px solid #aaa;
     padding: 1px 3px;
 }
@@ -134,12 +131,13 @@ body > * {
 }
 
 .container {
-    padding: 5px 0 20px;
-    border-right: 1px solid #c77c80;
-    border-left: 1px solid #c77c80;
+    padding: 8px 0 0;
+    min-height: 578px;
+    border: 0;
     display: grid;
-    grid-template-columns: 150px 564px 246px;
-    column-gap: 15px;
+    grid-template-columns: 186px 743px 310px;
+    column-gap: 0;
+    align-items: start;
 }
 
 .left-sidebar {
@@ -147,10 +145,10 @@ body > * {
 }
 
 .sidebar-menu li {
-    height: 24px;
-    margin-bottom: 5px;
-    padding: 3px 12px;
-    border-radius: 14px;
+    height: 25px;
+    margin-bottom: 3px;
+    padding: 5px 16px;
+    border-radius: 18px;
     background: #ed9296;
     overflow: hidden;
 }
@@ -161,43 +159,52 @@ body > * {
 }
 
 .sidebar-image {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 .round-image {
     display: block;
-    width: 150px;
-    height: 94px;
+    width: 100%;
+    height: 122px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 12px 10px rgba(237, 146, 150, .45);
 }
 
 .center-content {
-    padding-top: 0;
+    padding: 0 0 0 8px;
 }
 
 .section-title {
-    width: 293px;
-    height: 20px;
-    margin: 0 0 0 138px;
-    padding: 1px 8px;
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0 0 0 16px;
     background: #ed9296;
     color: #98444b;
-    font-size: 18px;
-    line-height: 19px;
-    letter-spacing: 4px;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 16px;
     white-space: nowrap;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .094);
+}
+
+.section-title:nth-of-type(2) {
+    margin-top: 0;
 }
 
 .section-title:nth-of-type(3) {
-    margin-top: 6px;
+    margin-top: 8px;
+    font-size: 21px;
+    letter-spacing: 13px;
+    height: 23px;
+    line-height: 23px;
 }
 
 .menu-list {
-    margin: 0 0 2px 8px;
-    padding-left: 16px;
-    line-height: 14px;
+    margin: 0;
+    padding-left: 32px;
+    line-height: 15px;
 }
 
 .center-content .menu-list:first-of-type li:nth-child(3) {
@@ -218,25 +225,26 @@ body > * {
 
 .back-to-top {
     display: block;
-    margin: 3px 0 0 -7px;
+    margin: 0;
+    line-height: 15px;
     color: #a20f16;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .info-form {
-    padding: 11px 2px 0;
+    padding: 11px 39px 20px 12px;
 }
 
 .section-title:nth-of-type(3) + .info-form {
-    padding-top: 6px;
+    padding-top: 11px;
 }
 
 .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 19px;
-    margin-bottom: 11px;
+    grid-template-columns: 330px 330px;
+    gap: 24px;
+    margin-bottom: 23.5px;
 }
 
 .info-form input[type="text"],
@@ -244,23 +252,31 @@ body > * {
 .info-form input[type="tel"],
 .info-form select {
     width: 100%;
-    height: 34px;
-    border: 1px solid #bbb;
-    padding: 6px;
-    color: #555;
-    font: 12px Arial, sans-serif;
+    height: 41px;
+    border: 1px solid #999;
+    padding: 10px;
+    background: #fff;
+    color: #111;
+    font: 11px Arial, sans-serif;
 }
 
 .radio-group {
-    height: 34px;
+    height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 1px;
     white-space: nowrap;
     font-size: 12px;
 }
 
 .radio-group input {
-    margin: 0 2px 0 7px;
+    margin: 0 3px 0 0;
+    width: 12px;
+    height: 12px;
+}
+
+.radio-group input:nth-of-type(2) {
+    margin-left: 12px;
 }
 
 .radio-group label {
@@ -268,13 +284,18 @@ body > * {
 }
 
 .info-form textarea {
-    width: 100%;
-    height: 46px;
-    margin: 14px 5px 8px;
-    border: 1px solid #aaa;
-    padding: 4px;
+    display: block;
+    width: calc(100% - 10px);
+    height: 57px;
+    margin: 28px 6px 11px 4px;
+    border: 1px solid #999;
+    padding: 3px;
     resize: both;
     font: 10px Arial, sans-serif;
+}
+
+.info-form textarea::placeholder {
+    font-weight: bold;
 }
 
 .form-actions {
@@ -283,51 +304,58 @@ body > * {
 }
 
 .form-actions button {
-    height: 30px;
-    padding: 3px 7px;
-    border: 1px solid #aaa;
-    background: #eee;
-    font: 12px Arial, sans-serif;
+    height: 32px;
+    padding: 7px 9px;
+    font: 11px Arial, sans-serif;
 }
 
 .right-sidebar {
-    height: 418px; /* Dùng height thay vì min-height. Bạn có thể tăng/giảm số 410 này lên xuống vài pixel để mép đen khớp 100% với đáy ô comment nhé */
-    align-self: start; /* Ép cột đen không được tự động kéo dài theo cột giữa */
-    padding: 5px 26px 10px;
+    height: auto;
+    align-self: start;
+    margin-top: 0;
+    padding: 0 0 16px;
     background: #000;
     color: #fff;
 }
 
 .events-title {
-    margin: 0 0 8px -26px;
-    font-size: 25px;
+    margin: 0;
+    font-size: 28px;
+    line-height: 32px;
 }
 
 .event-item {
-    margin: 0;
+    margin: 13px 30px 0;
+}
+
+.event-item + .event-item {
+    margin-top: 31px;
 }
 
 .event-subtitle {
-    margin: 0 0 1px 0;
+    margin: 0;
     font-size: 20px;
+    line-height: 22px;
 }
 
 .event-item img {
     display: block;
-    width: 194px;
-    height: 103px;
-    margin-bottom: 6px;
-    object-fit: cover;
+    width: 100%;
+    height: 140px;
+    object-fit: fill;
 }
 
 .event-item p {
-    margin: 0 0 10px;
-    line-height: 15.6px;
+    margin: 3px 0 0;
+    line-height: 15px;
 }
 
 .main-footer {
-    height: 52px;
-    border: 1px solid #c77c80;
+    height: 65px;
+    border-top: 1px solid #ae7777;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
     background: #ed9296;
     color: #fff;
     display: flex;
@@ -337,7 +365,7 @@ body > * {
 
 .main-footer p {
     margin: 0;
-    font-size: 16px;
+    font-size: 28px;
     font-style: italic;
     font-weight: bold;
 }
