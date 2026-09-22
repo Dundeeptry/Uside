@@ -134,7 +134,6 @@ body > * {
 }
 
 .container {
-    min-height: 459px;
     padding: 5px 0 20px;
     border-right: 1px solid #c77c80;
     border-left: 1px solid #c77c80;
@@ -292,7 +291,8 @@ body > * {
 }
 
 .right-sidebar {
-    min-height: 400px;
+    height: 418px; /* Dùng height thay vì min-height. Bạn có thể tăng/giảm số 410 này lên xuống vài pixel để mép đen khớp 100% với đáy ô comment nhé */
+    align-self: start; /* Ép cột đen không được tự động kéo dài theo cột giữa */
     padding: 5px 26px 10px;
     background: #000;
     color: #fff;
