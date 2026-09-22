@@ -103,6 +103,7 @@ body > * {
     font-size: 13px;
     text-align: center;
     text-decoration: none;
+    padding-top: 5px; /* Thêm dòng này (có thể tăng/giảm số 3px để chữ tụt xuống đúng ý bạn) */
 }
 
 .home-icon img {
