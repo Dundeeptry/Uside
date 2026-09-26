@@ -1,117 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Cafe Menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="main-header">
-        <h1>EXAMPLE CAFE MENU</h1>
-    </header>
-
-    <nav class="top-navbar">
-        <ul class="nav-links">
-            <li class="home-icon"><a href="#"><img src="assets/icons8-home-50.png" alt="Home"></a></li>
-            <li><a href="#starter">STARTER</a></li>
-            <li><a href="#main">MAIN COURSES</a></li>
-            <li><a href="#desserts">DESSERTS</a></li>
-        </ul>
-
-        <div class="search-box">
-            <input type="text" name="search" id="search-input">
-            <button type="button">Go</button>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <a class="box logo" href="#" style="text-decoration: none; color: inherit;"><span>Logo</span></a>
+          <nav class="box menu" aria-label="Điều hướng chính">
+            <a href="#content" style="text-decoration: none; color: inherit;"><span>Menu</span></a>
+          </nav>
+          <a class="box button" href="#contact" style="text-decoration: none; color: inherit;"><span>Button</span></a>
         </div>
-    </nav>
+      </header>
 
-    <main class="container">
-        
-        <aside class="left-sidebar">
-            <nav class="sidebar-nav">
-                <ul class="sidebar-menu">
-                    <li><a href="#">Cafe Latte</a></li>
-                    <li><a href="#">Capucino</a></li>
-                    <li><a href="#">Ocean Blue</a></li>
-                    <li><a href="#">Ice-cream Cafe</a></li>
-                    <li><a href="#">Order Online</a></li>
-                </ul>
-            </nav>
-            
-            <div class="sidebar-image">
-                <img src="assets/company.png" alt="Cafe Crowd" class="round-image">
+      <main>
+        <section class="hero" aria-label="Giới thiệu">
+          <div class="container">
+            <div class="box content"><span>Content</span></div>
+            <div class="box image"><span>Image</span></div>
+          </div>
+        </section>
+
+        <section id="content" class="section">
+          <div class="container">
+            <h2 class="box title"><span>Title</span></h2>
+            <div class="grid grid-3">
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
             </div>
-        </aside>
+          </div>
+        </section>
 
-<section class="center-content">
-    
-    <h2 class="section-title">S t a r t e r</h2>
-    <ul class="menu-list">
-        <li>Chesnut and Mushroom Goujons <span class="veg">(v)</span></li>
-        <li>Goat Cheese<span class="veg">(v)</span></li>
-        <li>HONEY SOY CHICKEN KEBABS<span class="veg">(V)</span></li>
-        <li>Seafood Salad<span class="veg">(v)</span></li>
-    </ul>
-    <a href="#" class="back-to-top">Back to Top</a>
-
-    <h2 class="section-title">D e s s e r t s</h2>
-    <ul class="menu-list">
-        <li>Lemon Sorbet <span class="veg">(v)</span></li>
-        <li>Chocolate Mud Pie<span class="veg">(v)</span></li>
-        <li>Pecan Pie<span class="veg">(v)</span></li>
-        <li>Selection of fine Cheeses from Around the World<span class="veg">(v)</span></li>
-    </ul>
-        <a href="#" class="back-to-top">Back to Top</a>
-
-        <h2 class="section-title">I N F O R M A T I O N</h2>
-        <form class="info-form">
-            <div class="form-row">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
+        <section class="section" style="background: #F1F1F1;">
+          <div class="container">
+            <h2 class="box title"><span>Title</span></h2>
+            <div class="grid grid-5">
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
             </div>
-            <div class="form-row">
-                <input type="email" placeholder="Email">
-                <input type="tel" placeholder="Telephone">
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <h2 class="box title"><span>Title</span></h2>
+            <div class="grid grid-4">
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
+              <article class="box item"><span>Item</span></article>
             </div>
-            <div class="form-row">
-                <select>
-                    <strong><option>USA</option></strong>
-                </select>
-                <div class="radio-group">
-                    <input type="radio" name="nationality" id="vietnamese"> <label for="vietnamese">Vietnamese</label>
-                    <input type="radio" name="nationality" id="foreigner"> <label for="foreigner">Foreigner</label>
-                </div>
-            </div>
-            <textarea placeholder="Comment" rows="4"></textarea>
-            <div class="form-actions">
-                <button type="submit">Submit</button>
-                <button type="button">Cacel</button> 
-            </div>
-        </form>
-    </section>
+          </div>
+        </section>
+      </main>
 
-        <aside class="right-sidebar">
-            <h2 class="events-title"><strong>Comment</strong></h2>
-
-            <div class="event-item">
-                <h3 class="event-subtitle">Regular Meetings</h3>
-                <img src="assets/meeting.png" alt="Regular Meetings">
-                <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#" class="read-more">Read more...</a></p>
-            </div>
-
-            <div class="event-item">
-                <h3 class="event-subtitle">Product Launches</h3>
-                <img src="assets/launch.png" alt="Product Launches">
-                <p>Launch your product with ease in a space that truly fits its image. <a href="#" class="read-more">Read more...</a></p>
-            </div>
-        </aside>
-
-    </main>
-
-        <footer class="main-footer">
-            <p>ABC Company &copy; - 12345678 - abccoffee@gmail.com</p>
-        </footer>
-
-</body>
+      <footer id="contact" class="footer"><span>Footer</span></footer>
+    </div>
+  </body>
 </html>
