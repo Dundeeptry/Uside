@@ -1,72 +1,137 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài 4</title>
+    <meta
+      name="description"
+      content="Manage your profile information and account settings."
+    />
+    <title>Bài 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page">
-      <header class="header">
-        <div class="container">
-          <a class="box logo" href="#" style="text-decoration: none; color: inherit;"><span>Logo</span></a>
-          <nav class="box menu" aria-label="Điều hướng chính">
-            <a href="#content" style="text-decoration: none; color: inherit;"><span>Menu</span></a>
-          </nav>
-          <a class="box button" href="#contact" style="text-decoration: none; color: inherit;"><span>Button</span></a>
-        </div>
-      </header>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <nav class="sidebar-nav">
+          <a class="nav-item is-active" href="#" aria-label="Dashboard" aria-current="page">
+            <img src="pic/vuesax/linear/element-4.svg" alt="" />
+          </a>
+          <a class="nav-item" href="#" aria-label="Analytics">
+            <img src="pic/vuesax/linear/graph.svg" alt="" />
+          </a>
+          <a class="nav-item" href="#" aria-label="Achievements">
+            <img src="pic/vuesax/linear/medal-star.svg" alt="" />
+          </a>
+          <a class="nav-item" href="#" aria-label="Messages">
+            <img src="pic/vuesax/linear/messages.svg" alt="" />
+          </a>
+        </nav>
 
-      <main>
-        <section class="hero" aria-label="Giới thiệu">
-          <div class="container">
-            <div class="box content"><span>Content</span></div>
-            <div class="box image"><span>Image</span></div>
+        <a class="nav-item sidebar-settings" href="#" aria-label="Settings">
+          <img src="pic/vuesax/linear/setting-2.svg" alt="" />
+        </a>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="page-heading">
+            <h1>Welcome, Amanda</h1>
+            <p>Tue, 07 June 2022</p>
           </div>
-        </section>
 
-        <section id="content" class="section">
-          <div class="container">
-            <h2 class="box title"><span>Title</span></h2>
-            <div class="grid grid-3">
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
+          <div class="topbar-actions">
+            <label class="search-box">
+              <img src="pic/vuesax/linear/search-normal.svg" alt="" />
+              <input type="search" placeholder="Search" aria-label="Search" />
+            </label>
+            <button class="icon-button notification-button" type="button" aria-label="Notifications">
+              <img src="pic/vuesax/linear/notification-bing.svg" alt="" />
+            </button>
+            <button class="user-avatar" type="button" aria-label="Open Amanda's account">
+              <img src="pic/Rectangle 1072.png" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <section class="profile-page" aria-label="Profile settings">
+          <div class="banner" aria-hidden="true"></div>
+
+          <section class="profile-card" aria-labelledby="profile-name">
+            <div class="profile-intro">
+              <div class="profile-person">
+                <img
+                  class="profile-photo"
+                  src="pic/source/08f8792cc4560e6955e1cf3aa9aa4edfe7cc29bf.png"
+                  alt="Alexa Rawles"
+                />
+                <div>
+                  <h2 id="profile-name">Alexa Rawles</h2>
+                  <p>alexa.rawles@gmail.com</p>
+                </div>
+              </div>
+              <button class="edit-button" type="button">Edit</button>
             </div>
-          </div>
-        </section>
 
-        <section class="section" style="background: #F1F1F1;">
-          <div class="container">
-            <h2 class="box title"><span>Title</span></h2>
-            <div class="grid grid-5">
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-            </div>
-          </div>
-        </section>
+            <form class="profile-form">
+              <div class="field-grid">
+                <label class="field">
+                  <span>First Name</span>
+                  <input type="text" placeholder="Your First Name" />
+                </label>
+                <label class="field">
+                  <span>Last Name</span>
+                  <input type="text" placeholder="Your Last Name" />
+                </label>
+                <label class="field select-field">
+                  <span>Gender</span>
+                  <select aria-label="Gender">
+                    <option value="" selected disabled>Your Gender</option>
+                  </select>
+                </label>
+                <label class="field select-field">
+                  <span>Country</span>
+                  <select aria-label="Country">
+                    <option value="" selected disabled>Your Country</option>
+                  </select>
+                </label>
+                <label class="field select-field">
+                  <span>Language</span>
+                  <select aria-label="Language">
+                    <option value="" selected disabled>Your Language</option>
+                  </select>
+                </label>
+                <label class="field select-field">
+                  <span>Time Zone</span>
+                  <select aria-label="Time Zone">
+                    <option value="" selected disabled>Your Time Zone</option>
+                  </select>
+                </label>
+              </div>
 
-        <section class="section">
-          <div class="container">
-            <h2 class="box title"><span>Title</span></h2>
-            <div class="grid grid-4">
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-              <article class="box item"><span>Item</span></article>
-            </div>
-          </div>
+              <section class="email-section" aria-labelledby="email-heading">
+                <h3 id="email-heading">My email Address</h3>
+                <div class="email-row">
+                  <span class="email-icon" aria-hidden="true">
+                    <img src="pic/vuesax/bold/sms.svg" alt="" />
+                  </span>
+                  <div class="email-details">
+                    <p>alexa.rawles@gmail.com</p>
+                    <span>1 month ago</span>
+                  </div>
+                </div>
+                <button class="add-email" type="button">+ Add Email Address</button>
+              </section>
+            </form>
+          </section>
         </section>
       </main>
-
-      <footer id="contact" class="footer"><span>Footer</span></footer>
     </div>
   </body>
 </html>
