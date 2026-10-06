@@ -639,11 +639,10 @@ img {
 .footer__newsletter button {
   background-color: #17494d;
   color: #ffffff;
-  border-color: #17494d;
-  padding: 10px 28px;
+  padding: 12px 28px; 
   font-size: 17px;
   font-weight: 700;
-  border: none;
+  border: 1px solid #17494d;
   cursor: pointer;
 }
 
@@ -678,4 +677,14 @@ img {
 
 .footer__legal a:hover {
   color: #03363d;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
