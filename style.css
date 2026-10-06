@@ -87,7 +87,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .eyebrow {
@@ -100,7 +100,7 @@ img {
 
 .eyebrow--light {
   color: #ffffff;
-  margin-bottom: -12px;
+  margin-bottom: -8px;
 }
 
 .section-heading h2 {
@@ -114,21 +114,21 @@ img {
 .hero {
   background-color: #52705e;
   color: #ffffff;
-  padding: 64px 0;
+  padding: 174px 0 64px;
 }
 
 .hero__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 108px;
+  gap: 100px;
 }
 
 .hero__copy {
   flex: 1.3;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px;
   color: #ffffff;
 }
 
@@ -151,20 +151,16 @@ img {
 }
 
 .hero__image {
-  width: 379px;
   height: auto;
-  margin-right: 73px;
-  margin-bottom: 3px;
 }
 
 .customer-logos {
   background-color: #ffffff;
-  padding: 64px 0;
+  padding: 71.5px;
 }
 
 .customer-logos__row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
@@ -202,21 +198,20 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 24px;
 }
 
 .benefit__icon {
   width: 64px;
   height: 64px;
   object-fit: contain;
-  margin: 0 auto 40px;
+  margin: 24px auto 44px;
 }
 
 .benefit h3 {
   font-size: 22px;
   font-weight: 700;
   color: #03363d;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .benefit p {
@@ -224,11 +219,11 @@ img {
   line-height: 1.6;
   color: #17494d;
   flex: 1;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .benefit .text-link {
-  margin-top: auto;
+  margin: 0 auto 29px;
 }
 
 .platform {
@@ -256,7 +251,7 @@ img {
   flex: 1.2;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .platform__copy h2 {
@@ -276,13 +271,20 @@ img {
 .roi-card {
   background-color: #03363d;
   border-radius: 8px;
-  padding: 56px;
+  padding: 64px 56px 67px ;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
   color: #ffffff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.container-roi-cards {
+  display: flex;
+  padding: 64px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .roi-card img {
@@ -320,7 +322,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 108px;
+  gap: 100px;
 }
 
 .security__copy {
@@ -380,26 +382,28 @@ img {
 }
 
 .tailored-card {
+  width: 536px;
+  padding: 24px 8px;
+  flex-shrink: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  align-items: center;
   background-color: #ffffff;
   border-radius: 8px;
+  gap: 16px;
 }
 
 .tailored-card img {
-  width: 64px;
-  height: 64px;
   object-fit: contain;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .tailored-card h3 {
   font-size: 22px;
   font-weight: 700;
   color: #03363d;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .tailored-card p {
@@ -407,14 +411,14 @@ img {
   line-height: 1.6;
   color: #17494d;
   flex: 1;
+  margin-bottom: 30px;
 }
 
 .stories {
   background-color: #ffffff;
-  padding: 64px 0;
-  min-height: 1007px;
+  padding: 64px 0; /* Lớp dưới cùng: Tạo padding 64px ở đáy cho cả section */
+  /* Bắt buộc phải xoá dòng min-height: 1007px ở file cũ đi */
 }
-
 .stories__brands {
   display: flex;
   align-items: center;
@@ -422,7 +426,7 @@ img {
   gap: 32px;
   width: 100%;
   min-height: 43px;
-  margin-bottom: 40px;
+  margin-bottom: 38.5px;
 }
 
 .story-brand {
@@ -434,10 +438,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   width: 720px;
-  margin: 0 auto;
-  padding: 64px 24px;
+  margin: 0 auto 64px; /* Lớp thứ 3: Căn giữa (auto) và đẩy lề dưới (margin-bottom) chính xác 64px */
+  padding: 64px 122.67px 41.5px; /* Lớp thứ 2: Đệm dưới (padding-bottom) chính xác 41.5px */
   text-align: center;
 }
 
@@ -468,9 +472,9 @@ img {
 .stories__stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px 32px;
+  gap: 42px 16px;
   width: 490px;
-  margin: 8px auto 0;
+  margin: 48px auto 0; /* Lớp trên cùng: 48px margin-top cộng với 16px gap của thẻ cha sẽ tạo ra chính xác 64px khoảng cách */
 }
 
 .stories__stats div {
@@ -502,7 +506,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 108px;
+  gap: 100px;
 }
 
 .contact__copy {
