@@ -356,19 +356,20 @@ img {
 .security__photo {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 296px;
   height: 296px;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 148px 148px 0 0;
 }
 
 .security__certifications {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 259px;
   height: 185px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .tailored {
