@@ -1,137 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Manage your profile information and account settings."
-    />
-    <title>Bài 5</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="app-shell">
-      <aside class="sidebar" aria-label="Main navigation">
-        <nav class="sidebar-nav">
-          <a class="nav-item is-active" href="#" aria-label="Dashboard" aria-current="page">
-            <img src="pic/vuesax/linear/element-4.svg" alt="" />
-          </a>
-          <a class="nav-item" href="#" aria-label="Analytics">
-            <img src="pic/vuesax/linear/graph.svg" alt="" />
-          </a>
-          <a class="nav-item" href="#" aria-label="Achievements">
-            <img src="pic/vuesax/linear/medal-star.svg" alt="" />
-          </a>
-          <a class="nav-item" href="#" aria-label="Messages">
-            <img src="pic/vuesax/linear/messages.svg" alt="" />
-          </a>
-        </nav>
-
-        <a class="nav-item sidebar-settings" href="#" aria-label="Settings">
-          <img src="pic/vuesax/linear/setting-2.svg" alt="" />
-        </a>
-      </aside>
-
-      <main class="main-content">
-        <header class="topbar">
-          <div class="page-heading">
-            <h1>Welcome, Amanda</h1>
-            <p>Tue, 07 June 2022</p>
-          </div>
-
-          <div class="topbar-actions">
-            <label class="search-box">
-              <img src="pic/vuesax/linear/search-normal.svg" alt="" />
-              <input type="search" placeholder="Search" aria-label="Search" />
-            </label>
-            <button class="icon-button notification-button" type="button" aria-label="Notifications">
-              <img src="pic/vuesax/linear/notification-bing.svg" alt="" />
-            </button>
-            <button class="user-avatar" type="button" aria-label="Open Amanda's account">
-              <img src="pic/Rectangle 1072.png" alt="" />
-            </button>
-          </div>
-        </header>
-
-        <section class="profile-page" aria-label="Profile settings">
-          <div class="banner" aria-hidden="true"></div>
-
-          <section class="profile-card" aria-labelledby="profile-name">
-            <div class="profile-intro">
-              <div class="profile-person">
-                <img
-                  class="profile-photo"
-                  src="pic/source/08f8792cc4560e6955e1cf3aa9aa4edfe7cc29bf.png"
-                  alt="Alexa Rawles"
-                />
-                <div>
-                  <h2 id="profile-name">Alexa Rawles</h2>
-                  <p>alexa.rawles@gmail.com</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bring your customer service, teams, and technology together with Zendesk.">
+    <title>Zendesk — Transform your customer relationships</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <div class="hero__copy">
+                    <p class="eyebrow eyebrow--light">Zendesk for enterprise</p>
+                    <h1>Transform your relationships with customers</h1>
+                    <p class="hero__description">
+                        Zendesk empowers you to adapt to changing customer expectations. Align your teams and technology
+                        around what matters most—the customer.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="button button--light" href="#contact">Contact Sales</a>
+                        <a class="button button--outline-light" href="#stories">View demo</a>
+                    </div>
                 </div>
-              </div>
-              <button class="edit-button" type="button">Edit</button>
+                <img class="hero__image" src="img/Image-5.png" alt="Sculptural installation against a deep blue background">
             </div>
-
-            <form class="profile-form">
-              <div class="field-grid">
-                <label class="field">
-                  <span>First Name</span>
-                  <input type="text" placeholder="Your First Name" />
-                </label>
-                <label class="field">
-                  <span>Last Name</span>
-                  <input type="text" placeholder="Your Last Name" />
-                </label>
-                <label class="field select-field">
-                  <span>Gender</span>
-                  <select aria-label="Gender">
-                    <option value="" selected disabled>Your Gender</option>
-                  </select>
-                </label>
-                <label class="field select-field">
-                  <span>Country</span>
-                  <select aria-label="Country">
-                    <option value="" selected disabled>Your Country</option>
-                  </select>
-                </label>
-                <label class="field select-field">
-                  <span>Language</span>
-                  <select aria-label="Language">
-                    <option value="" selected disabled>Your Language</option>
-                  </select>
-                </label>
-                <label class="field select-field">
-                  <span>Time Zone</span>
-                  <select aria-label="Time Zone">
-                    <option value="" selected disabled>Your Time Zone</option>
-                  </select>
-                </label>
-              </div>
-
-              <section class="email-section" aria-labelledby="email-heading">
-                <h3 id="email-heading">My email Address</h3>
-                <div class="email-row">
-                  <span class="email-icon" aria-hidden="true">
-                    <img src="pic/vuesax/bold/sms.svg" alt="" />
-                  </span>
-                  <div class="email-details">
-                    <p>alexa.rawles@gmail.com</p>
-                    <span>1 month ago</span>
-                  </div>
-                </div>
-                <button class="add-email" type="button">+ Add Email Address</button>
-              </section>
-            </form>
-          </section>
         </section>
-      </main>
-    </div>
-  </body>
+
+        <section class="customer-logos" aria-label="Zendesk customers">
+            <div class="container customer-logos__row">
+                <img src="img/Frame-24.svg" alt="Slack">
+                <img src="img/Frame-20.svg" alt="Ticketmaster">
+                <img src="img/Frame-17.svg" alt="Tesco">
+                <img src="img/Frame-16.svg" alt="Instacart">
+                <img src="img/Frame-14.svg" alt="Uber">
+                <img src="img/Frame-19.svg" alt="Ingersoll Rand">
+            </div>
+        </section>
+
+        <section class="benefits section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Built for the enterprise</p>
+                    <h2>The future of customer experience</h2>
+                </div>
+                <div class="benefits__grid">
+                    <article class="benefit">
+                        <img class="benefit__icon" src="img/Frame-12.svg" alt="">
+                        <h3>Drive better conversations</h3>
+                        <p>Offer rich, personalized conversations on the channels customers choose. They’ll feel like more than a transaction: you’ll encourage long-term loyalty.</p>
+                        <a class="text-link" href="#contact">Conversational features <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="benefit">
+                        <img class="benefit__icon" src="img/Frame-23.svg" alt="">
+                        <h3>Maximize agent efficiency</h3>
+                        <p>Transform agents from problem solvers to service drivers. With our all-in-one workspace, they’ll focus less on repetitive tasks and more on relationships.</p>
+                        <a class="text-link" href="#contact">Productivity features <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="benefit">
+                        <img class="benefit__icon" src="img/Frame-10.svg" alt="">
+                        <h3>Adapt faster to change</h3>
+                        <p>Keep up with ever-changing customer demands. Enter new markets and scale even faster with the open, flexible solutions on our complete Sunshine platform.</p>
+                        <a class="text-link" href="#platform">Zendesk platform <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="platform section" id="platform">
+            <div class="container platform__content">
+                <img class="platform__image" src="img/Image-3.png" alt="Zendesk connected to popular business applications">
+                <div class="platform__copy">
+                    <p class="eyebrow">Zendesk Sunshine platform</p>
+                    <h2>Open, flexible architecture</h2>
+                    <p>Our library of 1,200+ apps and integrations lets you add your everyday systems with a click, and our comprehensive set of APIs allows you to extend and customize solutions. When you connect your tech stack to Zendesk, data is useful and usable.</p>
+                    <a class="text-link" href="#contact">Explore platform <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <div class="container">
+                <aside class="roi-card">
+                    <img src="img/Image-4.png" alt="A sculptural still life in warm tones">
+                    <div class="roi-card__copy">
+                        <h3>Evaluate Zendesk ROI</h3>
+                        <p>Forrester shows the cost and benefits of Zendesk, pointing to an ROI of 286%, with payback in less than six months for a comparable enterprise.</p>
+                    </div>
+                    <a class="button button--light" href="#contact">See ROI resources</a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="security section">
+            <div class="container security__content">
+                <div class="security__copy">
+                    <p class="eyebrow">Security and compliance</p>
+                    <h2>You’re safe with us</h2>
+                    <p>Trusted by Fortune 100 companies, our privacy and data protection program includes a team dedicated to global compliance. We operate within all regulatory and industry frameworks—because software is only as good as its security.</p>
+                    <a class="text-link" href="#footer">Full compliance details <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="security__visual">
+                    <img class="security__photo" src="img/Image-2.png" alt="A leaf displayed inside a clear sculptural form">
+                    <img class="security__certifications" src="img/Image-1.png" alt="Security certifications including SOC 2, ISO 27001, and FSQS">
+                </div>
+            </div>
+        </section>
+
+        <section class="tailored section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Zendesk works for you</p>
+                    <h2>Tailored to your needs</h2>
+                </div>
+                <div class="tailored__grid">
+                    <article class="tailored-card">
+                        <img src="img/Frame-9.svg" alt="">
+                        <h3>Bring your vision to life</h3>
+                        <p>Partner with our world-class experts to design and implement Zendesk. Our Professional Services team will give you the personalized service you need to achieve your goals and transform your service experience.</p>
+                        <a class="text-link" href="#contact">Start the partnership <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="tailored-card">
+                        <img src="img/Frame-13.svg" alt="">
+                        <h3>Find your industry</h3>
+                        <p>We know every industry works a little differently. Whether you work in retail, manufacturing, financial services, or any other sector, our expertise will help you make the most of Zendesk.</p>
+                        <a class="text-link" href="#contact">View Zendesk industries <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="stories section" id="stories">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Customer stories</p>
+                    <h2>How businesses use Zendesk</h2>
+                </div>
+                <div class="stories__brands" aria-label="Customer stories">
+                    <span aria-hidden="true">‹</span>
+                    <span class="story-brand">tile</span>
+                    <span class="story-brand story-brand--highlight">Stanley Black &amp; Decker</span>
+                    <span class="story-brand story-brand--smc">◉ SMC</span>
+                    <span class="story-brand">COMPASS</span>
+                    <span class="story-brand">▱ Staples</span>
+                    <span aria-hidden="true">›</span>
+                </div>
+                <blockquote class="stories__quote">
+                    <p>“Time-to-cash absolutely improves with Zendesk; with faster resolution times, SMC fulfills and invoices orders more quickly.”</p>
+                    <cite>Robin Rodriguez <span>Global manager of platform and service delivery</span></cite>
+                    <a class="text-link" href="#contact">Read more <span aria-hidden="true">→</span></a>
+                </blockquote>
+                <div class="stories__stats">
+                    <div><strong>15</strong><span>languages supported</span></div>
+                    <div><strong>1,000+</strong><span>agents</span></div>
+                    <div><strong>4</strong><span>months time to implementation</span></div>
+                    <div><strong>83</strong><span>countries worldwide</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container contact__content">
+                <div class="contact__copy">
+                    <h2>Zendesk in action</h2>
+                    <div class="contact__actions">
+                        <a class="button button--light" href="mailto:sales@zendesk.com">Request demo</a>
+                        <a class="button button--outline-light" href="mailto:sales@zendesk.com">Contact Sales</a>
+                    </div>
+                </div>
+                <img src="img/Image.png" alt="Abstract geometric sculpture on a blue background">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <img class="zendesk-mark" src="img/Frame-18.svg" alt="Zendesk">
+                    <p>Champions<br>of customer<br>service</p>
+                </div>
+                <div class="footer__column">
+                    <h2>Our products</h2>
+                    <a href="#platform">Zendesk for service</a>
+                    <a href="#platform">Zendesk for sales</a>
+                    <a href="#platform">Sunshine Platform</a>
+                    <a href="#platform">Marketplace</a>
+                    <a href="#platform">Product updates</a>
+                </div>
+                <div class="footer__column">
+                    <h2>Top features</h2>
+                    <a href="#platform">Ticketing system</a>
+                    <a href="#platform">Messaging &amp; live chat</a>
+                    <a href="#platform">Help center</a>
+                    <a href="#platform">Voice</a>
+                    <a href="#platform">Community forums</a>
+                    <a href="#platform">Reporting &amp; analytics</a>
+                    <a href="#platform">Answer Bot</a>
+                    <a href="#platform">Customer service software</a>
+                    <a href="#platform">Ticketing system software</a>
+                    <a href="#platform">Live chat software</a>
+                    <a href="#platform">Knowledge base</a>
+                    <a href="#platform">Forum software</a>
+                    <a href="#platform">Help desk software</a>
+                </div>
+                <div class="footer__column">
+                    <h2>Resources</h2>
+                    <a href="#footer">Security</a>
+                    <a href="#footer">Product support</a>
+                    <a href="#footer">Request a demo</a>
+                    <a href="#footer">Blog</a>
+                    <a href="#footer">Training</a>
+                    <a href="#footer">Partners</a>
+                    <a href="#footer">Webinars</a>
+                    <a href="#stories">Customer Stories</a>
+                    <a href="#footer">Services</a>
+                </div>
+                <div class="footer__column">
+                    <h2>Company</h2>
+                    <a href="#footer">About us</a>
+                    <a href="#footer">Newsroom</a>
+                    <a href="#footer">Investors</a>
+                    <a href="#footer">Events</a>
+                    <a href="#footer">Careers</a>
+                    <a href="#footer">Diversity &amp; Inclusion</a>
+                    <a href="#footer">Sustainability</a>
+                    <a href="#footer">Contact us</a>
+                    <a href="#footer">Sitemap</a>
+                    <a href="#footer">System status</a>
+                    <a href="#footer">Zendesk Foundation</a>
+                    <a href="#footer">Legal</a>
+                </div>
+                <div class="footer__column">
+                    <h2>Favorite things</h2>
+                    <a href="#footer">What is Zendesk</a>
+                    <a href="#footer">Zendesk for Enterprise</a>
+                    <a href="#footer">Zendesk for Small Business</a>
+                    <a href="#footer">Zendesk for Startups</a>
+                    <a href="#footer">Zendesk Benchmark</a>
+                    <a href="#footer">Gartner CRM Magic Quadrant</a>
+                    <a href="#footer">Customer Experience Trends</a>
+                    <a href="#footer">What is CRM?</a>
+                    <a href="#footer">CRM software guide</a>
+                    <a href="#footer">Join our research panel</a>
+                </div>
+            </div>
+            <div class="footer__newsletter">
+                <div>
+                    <h2>Enter the fold</h2>
+                    <p>Subscribe to our newsletter.</p>
+                </div>
+                <form action="#" method="get">
+                    <label class="visually-hidden" for="newsletter-email">Your email</label>
+                    <input id="newsletter-email" type="email" placeholder="What's your email?" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="footer__socials" aria-label="Social media">
+                    <a href="#footer" aria-label="Twitter"><img src="img/Frame-22.svg" alt=""></a>
+                    <a href="#footer" aria-label="Facebook"><img src="img/Frame-21.svg" alt=""></a>
+                    <a href="#footer" aria-label="LinkedIn"><img src="img/Frame-2.svg" alt=""></a>
+                    <a href="#footer" aria-label="YouTube"><img src="img/Frame-1.svg" alt=""></a>
+                    <a href="#footer" aria-label="Instagram">
+                        <img src="img/Frame.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__legal">
+                <a href="#footer">Terms of Use</a>
+                <a href="#footer">Privacy Notice</a>
+                <a href="#footer">Cookie Notice</a>
+                <span>©Zendesk 2025</span>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
