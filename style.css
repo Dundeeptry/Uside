@@ -44,7 +44,6 @@ a {
   margin: 0 auto;
 }
 
-/* buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -61,10 +60,6 @@ a {
   background-color: #473bf0;
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(71, 59, 240, 0.2);
-}
-
-.btn--blue:hover {
-  background-color: #3b2ed8;
 }
 
 .btn--sm {
@@ -100,7 +95,6 @@ a {
   letter-spacing: -0.6px;
 }
 
-/* hero & header */
 .hero-wrap {
   width: 100%;
   min-height: 678px;
@@ -262,7 +256,6 @@ a {
   z-index: 0;
 }
 
-/* alert (sub-banner-section) */
 .alert {
   width: 100%;
   height: 96px;
@@ -299,7 +292,6 @@ a {
   text-decoration: underline;
 }
 
-/* content 01 (stats-section) */
 .content-01 {
   width: 100%;
   height: 659px;
@@ -388,7 +380,6 @@ a {
   opacity: 0.7;
 }
 
-/* section heads */
 .section-head {
   width: 769px;
   height: 129px;
@@ -418,7 +409,6 @@ a {
   opacity: 0.7;
 }
 
-/* services */
 .services {
   width: 100%;
   height: 769px;
@@ -604,7 +594,6 @@ a {
   height: 13px;
 }
 
-/* video (video-banner-section) */
 .video {
   position: relative;
   background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('img/video-bg.png') center/cover no-repeat;
@@ -660,7 +649,6 @@ a {
   opacity: 0.65;
 }
 
-/* testimonials */
 .testimonials {
   width: 100%;
   height: 742px;
@@ -738,7 +726,6 @@ a {
   opacity: 0.7;
 }
 
-/* cta */
 .cta {
   width: 100%;
   height: 169px;
@@ -768,7 +755,6 @@ a {
   white-space: nowrap;
 }
 
-/* footer */
 .footer {
   width: 100%;
   height: 496px;
@@ -840,26 +826,4 @@ a {
 
 .footer__col a:hover {
   text-decoration: underline;
-}
-
-/* responsive */
-@media (max-width: 1100px) {
-  .hero-wrap, .content-01, .services, .content-02, .testimonials, .cta, .footer {
-    height: auto;
-    padding: 60px 20px;
-  }
-  .hero, .content-01__grid, .services .container, .content-02__grid, .testimonials .container, .cards-3, .footer__grid, .cta__inner {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .section-head, .video h2, .video p {
-    width: 100%;
-    height: auto;
-  }
-  .nav {
-    display: none;
-  }
 }
