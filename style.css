@@ -330,7 +330,7 @@ a {
 }
 
 .content-01__img {
-  margin-right: 21px; /* 56px + 21px = 77px gap matching .stats-right-col */
+  margin-right: 21px;
 }
 
 .content-01__img img {
