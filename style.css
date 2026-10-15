@@ -136,9 +136,6 @@ a {
   letter-spacing: -0.1px;
 }
 
-.nav a:hover {
-  color: #473bf0;
-}
 
 .hero {
   width: 1085px;
@@ -195,13 +192,10 @@ a {
   transition: color 0.2s;
 }
 
-.watch:hover {
-  color: #473bf0;
-}
-
 .watch img {
   width: 18px;
   height: 18px;
+  opacity: 0;
 }
 
 .hero__media {
@@ -621,10 +615,6 @@ a {
   transition: transform 0.3s ease;
 }
 
-.video__play:hover {
-  transform: scale(1.1);
-}
-
 .video__play img {
   width: 68px;
   height: 68px;
@@ -822,8 +812,4 @@ a {
   font-size: 17px;
   line-height: 40px;
   letter-spacing: -0.2px;
-}
-
-.footer__col a:hover {
-  text-decoration: underline;
 }
